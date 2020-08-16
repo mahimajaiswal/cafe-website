@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cafe</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="images/logo.png" alt="Omnifood logo" class="logo">
+
+                <ul class="main-nav" id="check-class">
+                    <!-- <ul class="main-nav animated animate__slideInDown"> -->
+                    <li><a href="#">Cake Delivery</a></li>
+                    <li><a href="#">How to order</a></li>
+                    <li><a href="#">Chech more</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <div class="main-content-header">
+            <h1>Welcome to <span class="colorchange">the Dr Cafe</span>.<br>
+                House of Cake Lovers!!</h1>
+
+            <a href="#" class="btn btn-full">Click to order</a>
+            <a href="#" class="btn btn-nav">Show More</a>
+        </div>
+    </header>
+
+    <script>
+        function slideshow() {
+            var x = document.getElementById('check-class');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+
+            }
+            else {
+                x.style.display = "none";
+
+            }
+        }
+    </script>
+</body>
+
+</html>
